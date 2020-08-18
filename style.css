@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500,400);
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: ghostwhite;
+    font-family: 'Roboto', sans-serif;
+}
+
+.AlphabetNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: wrap row;
+    padding: .5rem;
+    background: ghostwhite;
+}
+
+.AlphabetNav a {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: .5em;
+    border-radius: 8px;
+    font-size: 2em;
+    line-height: 1;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.AlphabetNav a:hover {
+    background: #ddd;
+    color: #444;
+}
+
+.AlphabetNav .active {
+    background: #f46353;
+    color: white;
+}
+
+/* .ContactList */
+.ItemList {
+    padding: 10em 2rem 0;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.Item {
+    display: -webkit-box;
+    display:  flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.ItemList .Item {
+    margin-bottom: 1.5rem;
+}
+
+.item-image {
+    margin: 0 1em 0 0;
+    width: 50%;
+    min-width: 60px;
+    max-width: 100px;
+}
+
+.item-name {
+    margin: 0;
+    font-size: 1.7em;
+    font-weight: 500;
+    color: #444;
+}
